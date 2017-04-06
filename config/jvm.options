@@ -1,10 +1,16 @@
 ## JVM configuration
 
+-XX:MaxRAM=512m
+-XX:+ScavengeBeforeFullGC
+-XX:+CMSScavengeBeforeRemark
+-XX:MinHeapFreeRatio=20
+-XX:MaxHeapFreeRatio=40
+
 # Xms represents the initial size of total heap space
 # Xmx represents the maximum size of total heap space
 
--Xms512m
--Xmx512m
+#-Xms512m
+#-Xmx512m
 
 ################################################################
 ## Expert settings
@@ -72,4 +78,3 @@
 # log GC status to a file with time stamps
 # ensure the directory exists
 #-Xloggc:${LS_GC_LOG_FILE}
-

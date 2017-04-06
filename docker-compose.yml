@@ -1,0 +1,8 @@
+version: '3'
+services:
+    logstash:
+        build: .
+        container_name: logstash
+        network_mode: "host"
+        stdin_open: true
+        tty: true
